@@ -1,4 +1,4 @@
-# Logic Expressions
+# Logic Expressions: Part 1
 
 ## Propositions
 A proposition is a declarative statement.
@@ -21,6 +21,7 @@ The conjunction of p and q is p ∧ q.
 The disjunction of p and q is p ∨ q. 
 
 - p ∨ q is true if and only if p is true or q is true
+- ⊕: exclusive or : Only one side could be false
 
 ## Implication Operator
 The proposition (or statement) p → q has a truth value for
@@ -40,6 +41,8 @@ any setting of p and q.
 |F|T|T|
 |F|F|T|
 
+## Biconditional
+The truth table for {\displaystyle ~A\leftrightarrow B} ~A\leftrightarrow B also written as A ≡ B, A = B
 
 ## Equivalency Truth Table
 
@@ -61,6 +64,37 @@ any setting of p and q.
 ## Set Symbols
 ∈ ∉ ⊆ ⊂ ⊇ ⊃ ∅ ∪ ∩ ×
 
+## Logic Expression Example
+1. If the patient is an infant then the patient has no children
+
+- p: patient is an infant
+- q: patient has child
+- p -> -q
+
+2. The file is either read-only or it is not read-only but is a copy.
+- p: file read only
+- -p: file not read only
+- q: file is copy
+- p v (-p ∧ q)
+
+3. Bob is either rich or humble, but Bob is not humble if he is rich.
+- but tranfer as and
+- p: Bob is humble
+- q: Bob is rich
+- (p v q) ∧ (q -> -p)
+
+## Logic Expression Example 2 (to English)
+```
+p: Today is Monday
+q: It is raining
+r: It is hot
+```
+1. -p -> (q v r)
+- If today is not Monday, then it is raning or hot.
+
+2. -(p v q) <-> r
+- <-> if and only if
+- It is not the case that it is Monday or it is raining, if and only if it is hot.
 
 ## Required Reading 
 Chapter 2 ( Discrete Mathematics with Applications (4th Edition), Susanna S. Epp) Page : 23-36 ( You must try all the example problems from the book) 
@@ -80,4 +114,8 @@ Chapter 2 ( Discrete Mathematics with Applications (4th Edition), Susanna S. Epp
 |Idempotent| p ∧ p ⇐⇒ p  | p ∨ p ⇐⇒ p|
 |De Morgan’s| ∼ (p ∧ q) ⇐⇒ (∼ p) ∨ (∼ q) | ∼ (p ∨ q) ⇐⇒ (∼ p) ∧ (∼ q)|
 |Absorption| p ∨ (p ∧ q) ⇐⇒ p | p ∧ (p ∨ q) ⇐⇒ p|
-|Conditional (p =⇒ q) ⇐⇒ (∼ p ∨ q)  |∼ (p =⇒ q) ⇐⇒ (p∧ ∼ q)|
+|Conditional| (p =⇒ q) ⇐⇒ (∼ p ∨ q)  |∼ (p =⇒ q) ⇐⇒ (p∧ ∼ q)|
+
+***
+
+# Logic Expressions: Part 2
