@@ -44,6 +44,17 @@ any setting of p and q.
 ## Biconditional
 The truth table for A <-> B also written as A ≡ B, A = B
 
+|P|Q|R|P ≡ Q|-R|-R ⊕ Q |(P ≡ Q) v (-R ⊕ Q )|  
+|-|-|-|-----|--|:-----:|:-----------------:|
+|T|T|T|T    |F |T      |T           |
+|T|T|F|T    |T |F      |T           |
+|T|F|T|F    |F |F      |F           |
+|T|F|F|F    |T |T      |T           |
+|F|T|T|F    |F |T      |T           |
+|F|T|F|F    |T |F      |F           |
+|F|F|T|T    |F |F      |T           |
+|F|F|F|T    |T |T      |T           |
+
 ## Equivalency Truth Table
 
 |P|~P|Q|~Q|R|(Q->R)|(P -> (Q->R)|(~Q vR)|~P v(~QvR)|P ≡ Q|P ⊕ Q| P ∨ Q | P ∧ Q |  
