@@ -115,18 +115,127 @@ Chapter 2 ( Discrete Mathematics with Applications (4th Edition), Susanna S. Epp
 # Table of Logical Equivalences
 | Laws| a | b |
 |-----|---|---|
-|Commutative| p ∧ q ⇐⇒ q ∧ p | p ∨ q ⇐⇒ q ∨ p |
-|Associative| (p ∧ q) ∧ r ⇐⇒ p ∧ (q ∧ r) | (p ∨ q) ∨ r ⇐⇒ p ∨ (q ∨ r)|
-|Distributive| p ∧ (q ∨ r) ⇐⇒ (p ∧ q) ∨ (p ∧ r)| p ∨ (q ∧ r) ⇐⇒ (p ∨ q) ∧ (p ∨ r)|
-|Identity| p ∧ T ⇐⇒ p | p ∨ F ⇐⇒ p |
-|Domination| p ∨ T ⇐⇒ T | p ∧ F ⇐⇒ F|
-|Negation| p∨ ∼ p ⇐⇒ T | p∧ ∼ p ⇐⇒ F |
-|Double Negative| ∼ (∼ p) ⇐⇒ p | |
-|Idempotent| p ∧ p ⇐⇒ p  | p ∨ p ⇐⇒ p|
-|De Morgan’s| ∼ (p ∧ q) ⇐⇒ (∼ p) ∨ (∼ q) | ∼ (p ∨ q) ⇐⇒ (∼ p) ∧ (∼ q)|
-|Absorption| p ∨ (p ∧ q) ⇐⇒ p | p ∧ (p ∨ q) ⇐⇒ p|
-|Conditional| (p =⇒ q) ⇐⇒ (∼ p ∨ q)  |∼ (p =⇒ q) ⇐⇒ (p∧ ∼ q)|
+|Commutative| p ∧ q ≡ q ∧ p | p ∨ q ≡ q ∨ p |
+|Associative| (p ∧ q) ∧ r ≡ p ∧ (q ∧ r) | (p ∨ q) ∨ r ≡ p ∨ (q ∨ r)|
+|Distributive| p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)| p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)|
+|Identity| p ∧ T ≡ p | p ∨ F ≡ p |
+|Domination| p ∨ T ≡ T | p ∧ F ≡ F|
+|Negation| p∨ ∼ p ≡ T | p∧ ∼ p ≡ F |
+|Double Negative| ∼ (∼ p) ≡ p | |
+|Idempotent| p ∧ p ≡ p  | p ∨ p ≡ p|
+|De Morgan’s| ∼ (p ∧ q) ≡ (∼ p) ∨ (∼ q) | ∼ (p ∨ q) ≡ (∼ p) ∧ (∼ q)|
+|Absorption| p ∨ (p ∧ q) ≡ p | p ∧ (p ∨ q) ≡ p|
+|Conditional| (p -> q) ≡ (∼ p ∨ q)  | ∼ (p -> q) ≡ (p ∧ ∼ q)|
+
+De Mogran : should change either V or ∧ to the opposite one.
+- ~(P v ~Q)  ≡ ~P ∧ Q
+
+Conditional: p -> q ≡ (~p v q) 
+![conditional](images/conditional.png)
+
+The red area describes all members for which the material conditional is true, and the white area describes all members for which it is false. The material conditional differs significantly from a natural language's "if...then..." statement. It is only false when both the antecedent {\displaystyle A} A is true and the consequent {\displaystyle B} B is false.
 
 ***
 
 # Logic Expressions: Part 2
+
+## Example
+- Example 1:
+
+```
+Show that ∼(p ∨ ∼q) ∨ (∼p ∧ ∼q) ≡ ∼p.
+L.H. S = ∼(p ∨ ∼q) ∨ (∼p ∧ ∼q) 1. De Morgan’s law
+ ≡ (∼p ∧ ∼(∼q)) ∨ (∼p ∧ ∼q) 2. Double negation law
+ ≡ (∼p ∧ q) ∨ (∼p ∧ ∼q) 3. Distributive law
+ ≡ (∼p ∧ (q ∨∼q) ) 4. Negation law
+ ≡ (∼p ∧ t ) 5. Identity law
+ ≡ ∼p 
+```
+
+- Example 2:
+
+```
+Show that ∼ (q → p) ∨ (p ∧ q) ≡ q.
+L.H.S = ∼ (q → p) ∨ (p ∧ q) 1. Implication / conditional equivalence
+ ≡ ∼ (∼q ∨ p) ∨ (p ∧ q) 2. De Morgan’s law
+ ≡ (∼ (∼q) ∧ ∼p) ∨ (p ∧ q) 3. Double negation law and commutative law (p ∧ q)
+ ≡ (q ∧ ∼p) ∨ (q ∧ p) 4. Distributive law 
+ ≡ (q ∧ (∼p ∨ p)) 5. Negation law
+ ≡ (q ∧ T ) 6. Identity law
+ ≡ q 
+```
+
+- Example 3:
+
+```
+Show that (p ∨ ∼q) ∧ (∼p ∨ ∼q) ≡∼q
+
+(p ∨ ∼q) ∧ (∼p ∨ ∼q) 1. Commutative law
+≡ (∼q ∨ p) ∧ (∼q ∨ ∼p) 2. Distributive law
+≡ ∼q ∨ (p ∧ ∼p) 3. Negation law
+≡ ∼q ∨ c 4. Identity law
+≡ ∼q 
+```
+- Example 4:
+
+```
+L.H. S = (p ∧ q) → (p ∨ q) 1. Implication equivalence
+≡ ∼ (p ∧ q) ∨ (p ∨ q) 2. De Morgan’s law
+≡ (∼ p ∨ ∼ q) ∨ (p ∨ q) 3. Associative law
+≡ (∼ p ∨ ∼ q ∨ p) ∨ q 4. Commutative law
+≡ (∼ p ∨ p ∨ ∼ q) ∨ q 5. Associative law
+≡ (∼ p ∨ p) ∨ (∼ q ∨ q) 6. Negation law
+≡ t ∨ t 7. Idempotent law
+≡ t, It’s a tautology
+```
+
+- Example 5:
+```
+L.H.S = (p∧q) → p 1.Implication equivalence
+≡ ∼ (p∧q) ∨ p 2. De Morgan’s law
+≡ ( ∼ p∨∼ q) ∨ p 3. Commutative law
+≡ ( ∼ q∨∼p) ∨ p 4. Associative law
+≡ ∼q∨ (∼p ∨ p) 5. Negation law
+≡ ∼q∨ t 6. Universal bound law
+≡ t , it’s a tautology.
+```
+
+- Example 6:
+```
+Show that ∼ ((∼p ∧ q) ∨ (∼p ∧ ∼q)) ∨ (p ∧ q) ≡ p.
+L.H.S = ∼ ((∼p ∧ q) ∨ (∼p ∧ ∼q)) ∨ (p ∧ q) 1. De Morgan’s law
+≡ (∼ (∼p ∧ q) ∧ ∼ (∼p ∧ ∼q)) ∨ (p ∧ q) 2. De Morgan’s law
+≡ (∼(∼p) ∨ ∼ q) ∧ ((∼(∼p) ∨ ∼ (∼ q) ) ∨ (p ∧ q) 3. Double negation law
+≡ ((p ∨ ∼ q) ∧ (p ∨ q)) ∨ (p ∧ q) 4. Distributive law
+≡ ((p ∨ (∼ q ∧ q)) ∨ (p ∧ q) 5. Negation law
+≡ (p ∨ c) ∨ (p ∧ q) 6. Identity law
+≡ p ∨ (p ∧ q) 7. Absorption law
+≡ p
+```
+
+- Example 7:
+```
+Show that (p → q) \/ (p → r) and p → (q \/ r) are logically equivalent.
+L.H.S = (p → q) \/ (p → r) 1. Implication Equivalence
+≡ (∼p \/ q) \/ (∼p \/ r) 2. Associative law
+≡ ∼p \/ q \/ ∼p \/ r 3. Commutative law 
+≡ ∼p \/∼p \/ q \/ r 4. Idempotent law
+≡ ∼p \/ (q \/ r) 5. Implication law
+ ≡ p → q \/ r , they are logically equivalent.
+```
+
+- Example 8:
+```
+Show that ∼ (p ∨ (¬p ∧ q)) ≡ (∼p ∧ ∼q) ∨ c.
+L.H.S = ∼ (p ∨ (¬p ∧ q)) 1. De Morgan’s law
+ ≡ ∼p ∧ ∼ (∼p ∧ q) 2. De Morgan’s law
+ ≡ ∼p ∧ [∼ (∼p) ∨ ∼q] 3. Double negation law
+ ≡ ∼p ∧ (p ∨ ∼q) 4. Distributive law
+ ≡ (∼p ∧ p) ∨ (∼p ∧ ∼q) 5. Negation law
+ ≡ c ∨ (∼p ∧ ∼q) 6. Commutative law
+ ≡ (∼p ∧ ∼q) ∨ c 7. Identity law
+ ≡ ∼p ∧ ∼q 
+```
+
+## Required Reading
+Chapter 2 ( Discrete Mathematics with Applications (4th Edition), Susanna S. Epp) Page : 39-48 ( You must try all the example problems provided in the book) 
