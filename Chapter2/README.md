@@ -42,20 +42,20 @@ any setting of p and q.
 |F|F|T|
 
 ## Biconditional
-The truth table for {\displaystyle ~A\leftrightarrow B} ~A\leftrightarrow B also written as A ≡ B, A = B
+The truth table for A <-> B also written as A ≡ B, A = B
 
 ## Equivalency Truth Table
 
-|P|~P|Q|~Q|R|(Q->R)|(P -> (Q->R)|(~Q vR)|~P v(~QvR)|
-|-|--|-|--|-|:----:|:----------:|:-----:|:--------:|
-|T|F |T|F |T|T     |T           |T      |T         |
-|T|F |T|F |F|F     |F           |F      |F         |
-|T|F |F|T |T|T     |T           |T      |T         |
-|T|F |F|T |F|T     |T           |T      |T         |
-|F|T |T|F |T|T     |T           |T      |T         |
-|F|T |T|F |F|F     |T           |F      |T         |
-|F|T |F|T |T|T     |T           |T      |T         |
-|F|T |F|T |F|T     |T           |T      |T         |
+|P|~P|Q|~Q|R|(Q->R)|(P -> (Q->R)|(~Q vR)|~P v(~QvR)|P ≡ Q|P ⊕ Q| P ∨ Q | P ∧ Q |  
+|-|--|-|--|-|:----:|:----------:|:-----:|:--------:|:---:|:---:|:-----:|:-----:|
+|T|F |T|F |T|T     |T           |T      |T         |T    |F    |T      |T      |
+|T|F |T|F |F|F     |F           |F      |F         |T    |F    |T      |T      |
+|T|F |F|T |T|T     |T           |T      |T         |F    |T    |T      |F      |
+|T|F |F|T |F|T     |T           |T      |T         |F    |T    |T      |F      |
+|F|T |T|F |T|T     |T           |T      |T         |F    |T    |T      |F      |
+|F|T |T|F |F|F     |T           |F      |T         |F    |T    |T      |F      |
+|F|T |F|T |T|T     |T           |T      |T         |T    |F    |F      |F      |
+|F|T |F|T |F|T     |T           |T      |T         |T    |F    |F      |F      |
 
 
 ## Logic Symbols
