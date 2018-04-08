@@ -6,6 +6,8 @@ A proposition is a declarative statement.
 We often use letters p, q, r, s …. to denote propositions.
 T: true F: false
 
+A statement(proposition) is a sentence that is true or false but not both.
+
 ## Negation Operator
 The truth value of ¬p is the opposite of p.
 
@@ -21,7 +23,10 @@ The conjunction of p and q is p ∧ q.
 The disjunction of p and q is p ∨ q. 
 
 - p ∨ q is true if and only if p is true or q is true
+
+## Exclusive Or
 - ⊕: exclusive or : Only one side could be false
+- (p v q) ∧ ~(p ∧ q) : When or is used in its exclusve sense, the statement "p or q" means "p or q but not both" or " p or q and not both p and q".
 
 ## Implication Operator
 The proposition (or statement) p → q has a truth value for
@@ -113,19 +118,19 @@ Chapter 2 ( Discrete Mathematics with Applications (4th Edition), Susanna S. Epp
 ***
 
 # Table of Logical Equivalences
-| Laws| a | b |
-|-----|---|---|
-|Commutative| p ∧ q ≡ q ∧ p | p ∨ q ≡ q ∨ p |
-|Associative| (p ∧ q) ∧ r ≡ p ∧ (q ∧ r) | (p ∨ q) ∨ r ≡ p ∨ (q ∨ r)|
-|Distributive| p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)| p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)|
-|Identity| p ∧ T ≡ p | p ∨ F ≡ p |
-|Domination| p ∨ T ≡ T | p ∧ F ≡ F|
-|Negation| p∨ ∼ p ≡ T | p∧ ∼ p ≡ F |
-|Double Negative| ∼ (∼ p) ≡ p | |
-|Idempotent| p ∧ p ≡ p  | p ∨ p ≡ p|
-|De Morgan’s| ∼ (p ∧ q) ≡ (∼ p) ∨ (∼ q) | ∼ (p ∨ q) ≡ (∼ p) ∧ (∼ q)|
-|Absorption| p ∨ (p ∧ q) ≡ p | p ∧ (p ∨ q) ≡ p|
-|Conditional| (p -> q) ≡ (∼ p ∨ q)  | ∼ (p -> q) ≡ (p ∧ ∼ q)|
+| Laws| a | b | Time to Use|
+|-----|---|---|------------|
+|Commutative| p ∧ q ≡ q ∧ p | p ∨ q ≡ q ∨ p | 變pq順序 |
+|Associative| (p ∧ q) ∧ r ≡ p ∧ (q ∧ r) | (p ∨ q) ∨ r ≡ p ∨ (q ∨ r)|移動pqr相對位置|
+|Distributive| p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)| p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)| 簡化邏輯式，或展開邏輯|
+|Identity| p ∧ T ≡ p | p ∨ F ≡ p | and T / or F 不改變自身TF |
+|Domination| p ∨ T ≡ T | p ∧ F ≡ F| or T / and F 改變自身為 T F |
+|Negation| p∨ ∼ p ≡ T | p∧ ∼ p ≡ F | q 和 ~q -> 不可能 / q 與 ~q -> T |
+|Double Negative| ∼ (∼ p) ≡ p | | 抵銷~ |
+|Idempotent| p ∧ p ≡ p  | p ∨ p ≡ p| 重複 p and p / p or p|
+|De Morgan’s| ∼ (p ∧ q) ≡ (∼ p) ∨ (∼ q) | ∼ (p ∨ q) ≡ (∼ p) ∧ (∼ q)|將~放入其中，改變and / or |
+|Absorption| p ∨ (p ∧ q) ≡ p | p ∧ (p ∨ q) ≡ p| 簡化被覆蓋的部分 |
+|Conditional| (p -> q) ≡ (∼ p ∨ q)  | ∼ (p -> q) ≡ (p ∧ ∼ q)| 條件轉換，前面~ 與後面 |
 
 De Mogran : should change either V or ∧ to the opposite one.
 - ~(P v ~Q)  ≡ ~P ∧ Q
@@ -138,6 +143,24 @@ The red area describes all members for which the material conditional is true, a
 ***
 
 # Logic Expressions: Part 2
+
+## Testing whether two statements forms P and Q are logically Equivalent
+1. Construct a truth table with one column for the truth values of P and another column for the truth values of Q.
+2. Check each combination of truth values of the statement variables to see whether the truth value of P is the same as the truth value of Q.
+
+## De Morgan's Law
+The negation of an "and" statement is logically equivalent to the "or" statement in which each component is negated.
+The negation of an "or" statement is logically equivalent to the "and" statement in which each component is negated.
+
+John is 6 feet tall and he weights at least 200 pounds.
+- p: is 6 feet
+- Q: is at least 200 pounds
+- -> P ^ Q -> ~P V ~Q
+
+John is not 6 feet tall or he weights less than 200 pounds
+
+The bus was late or Tom's watch was slow
+- The bus was not late and Tom's watch was not slow.
 
 ## Example
 - Example 1:
