@@ -8,6 +8,27 @@ T: true F: false
 
 A statement(proposition) is a sentence that is true or false but not both.
 
+```
+21x + 1 < 5x is a proposition.  
+False, it is not a proposition because it has a variable x in it whose unknown.
+```
+
+```
+Is the following sentence a proposition? 
+
+Solve the equation,  2 + x = 3,  where x=1.
+
+The above sentence is not a proposition.  It's an imperative sentence.  A command to solve the equation is given here. 
+```
+
+```
+Is the following sentence a proposition?  
+
+Nobody laughed or applauded.
+
+The above sentence is not a proposition. There is no reference provided for the indefinite pronoun "nobody". 
+```
+
 ## Negation Operator
 The truth value of ¬p is the opposite of p.
 
