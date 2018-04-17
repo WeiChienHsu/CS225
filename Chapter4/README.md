@@ -1,5 +1,17 @@
 # Direct Proof & Contrapositive
 
+- [4.1](#4.1)
+- 4.2
+- 4.3
+- 4.4
+- 4.6
+- 4.7
+- 4.8
+
+***
+
+## 4.1
+
 ## Definitions - Odd and Even
 An integer n is even if, and only if, n equals twice some integer. An integer n is odd if, and only if, n equals twice some integer plus 1.
 
