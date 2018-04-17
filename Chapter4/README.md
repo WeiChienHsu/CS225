@@ -331,6 +331,81 @@ This contradicts Theorem 4.6.2 which states that no integer can be both even and
 
 ***
 
+### Deriving Additional Results about Even and Odd Integers
+1. The sum, product and difference of any two even integers are even
+2. The sum and difference of any twoo odd integers are even
+3. The product of any two odd integers is odd.
+4. The product of any even integer and any odd is odd.
+5. The sum of any odd integer and any even integer is odd 
+6. The difference of any odd integer minus any even integer is odd.
+7. The difference of any even integer munus any odd integer is odd.
+
+## Example
+For all odd integers a, b, c, if z is a solution of ax^2 + bx + c = 0, then z is irrational. (in the proof use the properties of even and odd integers that are listed in Example 4.2.3)
+
+Suppose z is irrational number. 
+Then z = p / q for some integers p and q with q != 0.
+
+We may assume p and q have no common factor.
+Note that because p and q have no common factor, they are not both even.
+
+Substitute p / q into ax^2 + bx + c = 0, and we got:
+
+a * (p/q) ^ 2 + b * (p/q) + c = 0
+
+Since we’ve already know that a, b and c are odd number, we could conclude three cases as below:
+
+1) p is odd, q is odd and p / q is odd.
+
+So, a * (p/q) ^ 2 + b * (p/q) + c = 0 could be seen as
+
+     odd * odd + odd * odd + odd =  odd + odd + odd = odd
+
+The result should be 0, which is an even number.
+
+ his is a contradiction.
+
+2) p is even, q Is odd and p / q is even.
+
+So, a * (p/q) ^ 2 + b * (p/q) + c = 0 could be seen as
+
+     odd * even + odd * even + odd =  even + even + odd = odd
+
+The result should be 0, which is an even number.
+
+This is a contradiction.
+
+
+3) p is odd and q is even. Then, p / q is not an integer. 
+Let p = 2k and q = 2k +1, substitute them into a * (p/q) ^ 2 + b * (p/q) + c = 0:
+
+Firstly, we need to multiply through by q ^2,
+
+We got a*p^2 + b*p*q + c*q^2 and then we could get:
+
+a(4k^2 + 4k + 1) + b(4k^2 + 2k) + c(4k^2) = 0
+
+≡ ((a + b + c) * 4) * k^2 + (4a + 2b) k + a  which could be seen as: 
+	
+	odd *  even * k^2  + even * k + odd
+	
+          ≡  even + even + odd -> odd
+
+The result should be 0, which is an even number.
+
+This is a contradiction.
+
+
+4) p and q couldn’t be both even by assumption. Or we can divide out their greatest common factor to obtain two integers p’ and q’ that satisfy the equation  z = p’ / q’. Then we could redefine q = q’ and p = p’.
+
+
+
+By those contradiction happen in all conditions in our assume, we could know there is a contradiction, thus for all odd integers a, b, c, if z is a solution of ax^2 + bx + c = 0, then z is irrational.
+
+
+
+***
+
 ## 4.7
 ## Indirect Argument: Two Classiccal Theorems(207-211)
 
