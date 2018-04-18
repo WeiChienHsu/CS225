@@ -101,7 +101,41 @@ Thus, by definition of B, x is an element of B.
 ***
 
 ## Operations on Sets
+- The union of A and B: A ∪ B
+- The intersection of A and B: A ∩ B
+- The defference of B minus A(or relative complement of A in B): set of all elements that are in B and not A
+- The complement of A, is the set of all elements in U that are not in A.
 
+### Notation
+
+- (a,b) = {x ∈ R | a < x < b}
+- (a,b] = {x ∈ R | a < x <= b}
+- (a,∞) = {x ∈ R | a > x }
+
+
+### Unions and Intersections of an Indexed Collection of Sets
+"The Union of the A-sub-i from i equals zero to n"
+
+![sample](./image.png)
+
+
+### Finding Unions and Intersections of More than Two Sets
+For each postive integer i let Ai = { x ∈ R | -(1/i) < x < 1/i} = Ai = (-(1/i) * 1/i)
+
+#### Find A1 U A2 U A3 and A1 ∩ A2 ∩ A3
+1. Since all the elements in (-1/3, 1/3) and (-1/2, 1/2) are in (-1, 1): Ansewer is (-1, 1)
+2. Answer is (-1/3, 1/3)
+
+```
+-|-----|------|----|---|-----|------|--
+-1  -1/2    -1/3   0  1/3    1/2    1
+```
+
+##### Find U i = 1 to ∞ and ∩ i = 1 to ∞
+
+1. = A1 U A2 U A3 U... A∞ = (-1, 1)
+
+2. = A1 ∩ A2 ∩ A3 ∩... A∞ = (-1/ ∞, 1/ ∞) = {0}
 
 ***
 
