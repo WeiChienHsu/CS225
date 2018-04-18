@@ -82,7 +82,7 @@ B = {n ∈ Z | n = 2b - 2 for some integer b}
 ### Proofs
 #### Proof That A ⊆ B
 Suppore x is a particular but arbitrarily chosen element of A.
-- [We must show gtaht x ∈ B, by definition of B, this means we need to show x = 2 * someinteger - 2]
+- [We must show taht x ∈ B, by definition of B, this means we need to show x = 2 * someinteger - 2]
 
 By definition of A, there is an integer a such that x = 2a
 - [Given that x = 2a, can x also be expressed as 2 * some integer - 2? b = (2a + 2)/2 = a + 1]
@@ -141,9 +141,88 @@ For each postive integer i let Ai = { x ∈ R | -(1/i) < x < 1/i} = Ai = (-(1/i)
 
 ## The Empty Set
 
+Two set are called disjoint if and only if they have no elements in common.
+
+```
+A ∩ B = ∅ 
+```
+
+#### Mutually Disjoint Sets
+Let A1 = {3,5} A2 = {1,4,6} and A3 = {2} 
+Since they hace no elements in common, thry are mutually disjoint.
 
 ***
 
 ## Power Set
+A set of all subsets.
+∅ is an element in every set.
 
-∅ 
+```
+p({x,y}) = {∅,{x},{y},{x,y}}
+```
+
+***
+
+## Cartesian Products
+
+### ordered n-tuple
+Recall that the definition of a set is unaffected by the order in which its elements are listed or the fact that some elements may be listed mroe than once.
+
+Thus, {a,b},{b,a},{a,a,b} are all the same set!
+
+The notaion for an ordered n-tuple is a generalization of the notaion for an ordered pair. It took both order and multiplicity into account.
+
+```
+(x1, x2, x3 ... xn) = (y1, y2, y3, ... yn)
+when x1 = y1, x2 = y2 ... xn = yn
+```
+
+### Cartesian Products
+
+Let A1 = {x,y}, A2 = {1,2,3} and A3 = {a,b}
+
+- Find A1 x A2 = {(x,1),(x,2),(x,3),(y,1),(y,2),(y,3)}
+- Find (A1 x A2) X A3 = {((x,1),a),((x,2),a),((x,3),a),((y,1),a)...((y,3),b)}
+- Find A1 X A2 X A3 = {(x,1,a),(x,2,a),(x,3,a),(y,1,a),(y,2,a),(y,3,a),(x,1,b),(x,2,b),(x,3,b),(y,1,b),(y,2,b),(y,3,b)}
+
+
+*** 
+
+## Example
+
+B = {y ∈ Z | y = 18b – 2 for some integer b}
+C = {z ∈ Z | z = 18c + 16 for some integer c}
+
+c) B = C
+	
+True.
+
+```
+When B = C means B⊆   C and C ⊆   B
+
+Prove B⊆   C 
+
+Suppose k is an element of C.
+By the definition of C, there is an integer a such that k = 18c + 16.
+
+Let b = c + 1
+Also,18b – 2 = 18(c+1) – 2 = 18c + 18 – 2 = 18c + 16 = k
+
+Which means k ∈ B, C is a subset of B.
+
+Prove C ⊆   B
+
+Suppose k is an element of C.
+By the definition of C, there is an integer a such that k = 18c + 16.
+
+Let b = c + 1
+Also,18b – 2 = 18(c+1) – 2 = 18c + 18 – 2 = 18c + 16 = k
+
+Which means k ∈ B, C is a subset of B.
+
+Since B⊆   C and C ⊆   B, prove B = C.
+```
+
+***
+
+
