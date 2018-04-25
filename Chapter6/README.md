@@ -318,10 +318,18 @@ x∈ A U B  iff x ∈/ (A U B)
 ![Image2](./image2.png)
 
 
+***
+
 
 ## Required Reading
 Required Reading : pp. 341-343,  352- 364 , 367- 372
 
 ***
+
+# Sequences and Summations
+![summations](./image3.png)
+
+
+
 
 
