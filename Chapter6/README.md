@@ -271,6 +271,54 @@ _____    _   _
 A ∩ B  = A U B
 ```
 
+## Proof
+
+### Prove A - B = A ^ B(bar)
+#### (X ∈ A - B) -> (X ∈ A ^ B(bar))
+Assume X ∈ A - B
+Then, X ∈ A ^ X ∈/ B
+Then, X ∈ A ^ X ∈ B(bar)
+Then, X ∈ A ^ B(bar)
+
+####  (X ∈ A ^ B(bar)) -> (X ∈ A - B) 
+
+Assume X ∈ A ^ B(bar)
+Then, X ∈ A ^ X ∈ B(bar)
+Then, X ∈ A ^ X ∈/ B
+Then, X ∈ A - B
+
+#### (X ∈ A - B) iff (X ∈ A ^ B(bar)
+(X ∈ A - B) iff X ∈ A ^ X ∈/ B
+(X ∈ A - B) iff X ∈ A ^ X ∈ B(bar)
+(X ∈ A - B) iff (X ∈ A ^ B(bar)
+
+
+### Prove 2
+```
+Prove:
+_____    _   _
+A U B  = A ∩ B
+
+
+   _____    
+x∈ A U B  iff x ∈/ (A U B)
+          iff x ∈/A  ∩ x ∈/B
+                  _      _
+          iff x ∈ A ∩ x∈ B
+                  _   _
+          iff x ∈ A ∩ B
+
+```
+
+### Prove Empty Set
+- Prove by contraction.
+![Image1](./image1.png)
+
+- Prove by Identity Rules.
+![Image2](./image2.png)
+
+
+
 ## Required Reading
 Required Reading : pp. 341-343,  352- 364 , 367- 372
 
