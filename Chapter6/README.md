@@ -225,4 +225,55 @@ Since B⊆   C and C ⊆   B, prove B = C.
 
 ***
 
+# Set Opeartion
+
+### Union
+Set A and B(A U B) us the set that contains the elements that are in either A or B(or both)
+
+```
+A U B = {x|x ∈ A ∨ x ∈ B }
+```
+
+### Intersecion 
+Set A and B (A ∩ B) is the set that contains the elements that are in both A and B
+
+```
+A ∩ B = {x|x ∈ A ∧ x ∈ B }
+```
+
+#### Cardinalities of Union
+
+|A| + |B| - A ∩ B = A U B 
+
+### Difference
+Ser A and B(A - B) is the set that conatins all the element in A but not in B
+
+```
+A - B = {x|x ∈ A ∧ x ∈\ B }
+```
+
+### Complement 
+      
+Set x (x̅) is the set that contains exactly all the element that are not in A.
+
+### Set Identities
+
+#### Distributive Property:
+A ∩ (B U C) = (A ∩ B) U (A ∩ C)
+A U (B ∩ C) = (A ∩ B) U (A ∩ C)
+
+#### De Morgan's Laws
+```
+_____    _   _
+A U B  = A ∩ B
+
+_____    _   _
+A ∩ B  = A U B
+```
+
+## Required Reading
+Required Reading : pp. 341-343,  352- 364 , 367- 372
+
+***
+
 
