@@ -333,3 +333,11 @@ Required Reading : pp. 341-343,  352- 364 , 367- 372
 
 
 
+
+
+## Required Reading
+pp. 227-233( up to the example) , 234-236 ( Discrete Mathematics with Applications, Susanna S.Epp) 
+
+***
+
+
