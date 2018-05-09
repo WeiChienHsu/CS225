@@ -1,0 +1,11 @@
+- propositions
+- truth tables
+- expressing propositions with natural language
+- expressing natural language with propositions
+- direct proof
+- proof by contraposition
+- proof by contradiction
+- set theory and operations
+- sequences and summations 
+- weak induction
+- strong induction
