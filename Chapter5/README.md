@@ -33,3 +33,12 @@ Combining both the cases, P(k+1) is true for any integer k >= 2. Thus, by strong
 Both Basic and Inductive Case are proved, so we can say the statement is True.
 
 ```
+
+***
+
+# Weak Induction
+
+
+***
+
+# Strong Induction
