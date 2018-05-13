@@ -36,9 +36,20 @@ Both Basic and Inductive Case are proved, so we can say the statement is True.
 
 ***
 
-# Weak Induction
+# Weak Induction 使用 n 證明 n+1 也正確
 
+If you can show P(k+1) is correct by using only P(k) you can use weak induction.
+
+1. Basic Case: prove P(0) or P(1) (depends on the domain)
+2. Prove the implication Vn P(n) -> P(n+1)
+
+
+For example, If P(k+1)=P(k)+P(k-1), if you want to show P(k+1) divisible to 4, you have to assume that both  P(k) and P(k-1) are divisible to 4. If you only assume P(k) is divisible to 4, it is hard to prove, right? So, base on strong induction, in the induction step, we assume that both P(k) P(k+1) are divisible to 4. Then P(k+1)= P(k)+P(k-1) is divisible to 4.
 
 ***
 
-# Strong Induction
+# Strong Induction 使用所有 n+1 前的假設，證明n+1正確
+
+Strong induction gives you more hypothesis, more assumption than weak induction, it makes the problem more easy since we have more assumption. 
+
+If you can show P(k+1) correct but you have to use P(i), P(j), P(q)... with all i,j,q< k+1 this is the case for strong induction. 
