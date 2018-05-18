@@ -80,6 +80,44 @@ The total number of elements is |A| + |B| - |A^B|
 
 
 ***
+## Pigeonhole Principle
+
+If ther are k containers and k+1 or more objects are placed in the containers, then at least one container has at least 2 objects.
+
+
+### Example
+
+Show that among any set of 5 positive integers, there are 2 with the same remainder when diveded by 4.
+
+So, containers are {0, 1, 2, 3} which will be the possible remainders when diveded by 4.
+And there are 5 positive integers. Thus, at least one conatiner(remainder) will hace two Objects(Integers)
+
+-> At least one remainder will be used twice.
+
+## Generalized Pigeonhole Principle
+
+If N or more objects are placed in k containers, then at least one container must have at least [N/k] objects.
+
+### Example
+
+#### Consider a party with 100 people. What can we say about the number of people that were born in the same month?
+
+Containers = 12 months
+Object = 100 people
+[100/12] = [8.3] = 9
+At least one month has 9 people
+
+
+#### Show that among any set of 9 positive integers, there are 3 with the same remainder when divided by 4.
+
+Container = 4
+Object = 9
+[9/4] = [2.25] = 3
+
+At least 3 number have the same remainder.
+
+
+***
 
 
 
