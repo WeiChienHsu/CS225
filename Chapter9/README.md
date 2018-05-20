@@ -116,6 +116,16 @@ Object = 9
 
 At least 3 number have the same remainder. 
 
+
+#### Assignment
+
+There are 50 baskets of apples. Each basket contains no more than 24 apples. Show that there are at least 3 baskets containing the same number of apples.
+
+Answer:
+The baskets are the pigeons, and we place each of them in one of 24 pigeonholes according to how many apples are
+in it. Thus the ratio n/k of pigeons to pigeonholes is 50/24 = 2 1⁄2. By Generalized Pigeon Hole Principle, there are at least this many baskets with the same number of apples, so there must be at least 3.
+
+
 ***
 
 # Permutations and Combinations
