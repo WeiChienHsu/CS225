@@ -114,11 +114,66 @@ Container = 4
 Object = 9
 [9/4] = [2.25] = 3
 
-At least 3 number have the same remainder.
-
+At least 3 number have the same remainder. 
 
 ***
 
+# Permutations and Combinations
 
+## Pernutations
+
+P(n, k) = n! / (n-k)!
+
+## Combination
+
+C(n, k) = n! / ((k!) * (n-k!))
+
+## Permutations w/ Repetition
+Consider creating a police lineup of 3 individuals selected from a group of 10 people including 3 age groupts with at least 3 people per age group.
+
+How many possible age group orderings are there for the lineup?
+(How many total people is not importmant)
+
+S = {group1, group2, group3}, n = 3, r = 3
+
+Answer: # permutations w/ repetition = 3^3 = 27
+
+## Combination w/ Repetition
+
+An r-combination w/ repetition of a set is an unordered selection of r elements of the set allowing for repetition.
+
+2-Combinations with repetition of {a, b, c}
+
+(a, a) (a, b) (a, c) (b, b) (b, c) (c, c)
+
+Since order doesn't matter (a, b) is the same as (b, a)
+
+
+C(2+3-1, 2) = C(4, 2) = 6
+
+### Formula
+
+How many ways to select r positions to be the elements?
+C(r+n+1, r)
+
+How many ways to select n-1 positions to be the dividers?
+C(r+n-1, n-1)
+
+How many r-combinations w/ repetition are there of a set {e1, e2, ...en} with n elements?
+
+
+### Example
+Suppose a opinion poll group randomly selects a group of 6 people from a group of 100 people that are uniformly distributed among 4 age groups.
+
+How many possible age group combinations could possible be selected?
+
+n = 4, r = 6
+
+C(4+6-1, 6) = (9 * 8 * 7) / 6 = 84 
+
+
+
+
+***
 
 ## Required Reading : pp. 525- 529, 540-549 
