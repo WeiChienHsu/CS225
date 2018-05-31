@@ -104,4 +104,51 @@ pp.  625-638 ( Discrete Mathematics with Applications, Susanna S.Epp)
 
 ***
 
-## Connectivity
+# Connectivity and Path
+
+Can we get from one point to another?
+Is there a relationship link between two people?
+What connected groups does a person belong to?
+Which one scientific paper influenced by another?
+
+## Paths
+從v0開始，連接到vn的路線。
+A path from vertex v0 to vn is a sequence of edges that connect successive vertices in a sequence v0, v1, v2... vn. The path length is n.
+
+
+![path](./path.png)
+
+1. (a, b), (b, c), (c, e)
+2. (a, b), (b, c), (c, e), (e, b), (b, c), (c, e)
+
+
+A path is "simple" if it does not have repeated deges. 
+
+### Circuit
+
+A "circuit" is a path that starts and ends with the same vertex.
+
+
+- Simple Circuit: (b,c), (c,e), (e,b)
+- Non-Simple Circuit: (b,c) (c,e) (e,b) (b,c) (c,e) (e,b)
+
+## Simple Path Lemma
+Lemma: If there is a path between vertices u and v in a graph, then there is a simple path between u and v.
+
+P: There is a path between u and v
+Q: There is a simple path between u and v
+
+Need to prove P -> Q
+
+Assume that P is true.
+
+#### Case1: Path is simple. Then Q is True.
+#### Case: Path is not simple.
+We get a repeated path from u to v.
+- (u,a) (a,v) (v,b) (b,a) (a,v)
+- We repeated (a,v) twice. There is a "circuit".(Start at A and end up A)
+- We can cut the circut out of the path and still get the path we want.
+
+***
+
+# Connectedness
