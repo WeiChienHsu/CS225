@@ -193,10 +193,39 @@ A directed graph is strongly conected if for each pair of vertices there is a di
 |------|---------------|-----------------|-------|-----|
 | Walk | Allowed       | Allowed         | Allowed| No|
 | Trail| No       | Allowed         | Allowed| No|
-| Path | No       | No         | No| No|
+| Path | No       | No         | No |  No|
 
 ***
 
+[Walks, Trails, Paths, Circuits](http://mathonline.wikidot.com/walks-trails-paths-cycles-and-circuits)
+
+## Walks
+
+Definition: For a graph G=(V(G),E(G)), a Walk is defined as a sequence of alternating vertices and edges such as v0,e1,v1,e2,...,ek,vk where each edge ei={vi−1,vi}. The Length of this walk is k.
+
+Note that walks can have repeated edges.
+
+## Open / Closed Walks
+
+Definition: A walk is considered to be Closed if the "starting vertex is the same as the ending vertex", that is v0=vk. A walk is considered Open otherwise.
+
+## Trails
+A Trail is defined as a walk with no repeated edges.
+
+## Paths
+Definition: A Path is defined as an open trail with no repeated vertices.
+
+Notice that all paths must therefore be open walks, as a path "cannot both start and terminate at the same vertex."
+
+## Circuit
+Definition: A Circuit is a "closed trail". That is, a circuit has no repeated edges but may have repeated vertices.
+
+***
+## Euler Circuirs
+
+Let G be a graph. An Euler Circuit for G is a circuit that contins every vertex and every edge of G. That is, an Euler circuit for G is a sequence of adjacent vertices and edfes in G that has at least one edge, starts and ends at the same vertex, "uses every vertex of G at least once, and uses every edge of G exactly once".
+
+***
 ## Required Reading
 pp.  625-638 (Discrete Mathematics with Applications, Susanna S.Epp)
 pp.  642-653 (Discrete Mathematics with Applications, Susanna S.Epp)
