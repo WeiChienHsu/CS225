@@ -151,4 +151,40 @@ We get a repeated path from u to v.
 
 ***
 
-# Connectedness
+# Connectedness 
+無向圖中，每兩點間都有一個Path連接，就是Connected.
+An undirected graph is called connected if there is a path "between every pair of distinct vertices" in the graph.
+有向圖中，strongly connected必須讓每個點都能有a到b與b到a的路徑。
+
+## Connectedness Theorem
+Undirected graph G is connected if and only if there is a simple path between each pair of vertices in G.
+
+P = G is connected
+Q = Simple path between each pair of distinct vertices in G
+
+#### P -> Q
+Assume P is true. Thus, there is a path between each pair of vertices.
+Thus, by simple path Lemma, each pair has a simple path.
+Q is true.
+
+
+#### Q -> P
+
+Assume that Q is true. Then there is a simple path between each pair of vertices. So, P is true by definitions of Connectedness.
+
+***
+
+## Directed Graph
+A directed path in a directed graph G from vertex v0 to vn is sequence of edges that connect successive vertices(order matters) in a sequence v0, v1, v2...vn.
+
+![DirectedPath](./directedPath.png)
+
+- Directed paths from a to e: (a,b) (b,e)
+- No directed path from a to c
+- No directed path form e to any vertex.
+
+
+## Strongly Connected Directed Graph
+A directed graph is strongly conected if for each pair of vertices there is a directed path from u to v and from v to u.
+
+***
