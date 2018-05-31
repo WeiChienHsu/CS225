@@ -97,10 +97,6 @@ Let V1 contain red vertices and V2 contian black vertices.
 
 We see that P is true
 
-***
-
-## Required Reading
-pp.  625-638 ( Discrete Mathematics with Applications, Susanna S.Epp)
 
 ***
 
@@ -187,4 +183,20 @@ A directed path in a directed graph G from vertex v0 to vn is sequence of edges 
 ## Strongly Connected Directed Graph
 A directed graph is strongly conected if for each pair of vertices there is a directed path from u to v and from v to u.
 
+- Indicators of communities in social networks.
+
 ***
+
+## Path, Trails, Circuits and Conectivity
+
+| Name | Repeated Edge | Repeated Vertex | Starts and Ends at same point | Must contain at least one edge|
+|------|---------------|-----------------|-------|-----|
+| Walk | Allowed       | Allowed         | Allowed| No|
+| Trail| No       | Allowed         | Allowed| No|
+| Path | No       | No         | No| No|
+
+***
+
+## Required Reading
+pp.  625-638 (Discrete Mathematics with Applications, Susanna S.Epp)
+pp.  642-653 (Discrete Mathematics with Applications, Susanna S.Epp)
