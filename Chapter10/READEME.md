@@ -101,4 +101,7 @@ We see that P is true
 
 ## Required Reading
 pp.  625-638 ( Discrete Mathematics with Applications, Susanna S.Epp)
+
 ***
+
+## Connectivity
