@@ -229,3 +229,60 @@ Let G be a graph. An Euler Circuit for G is a circuit that contins every vertex 
 ## Required Reading
 pp.  625-638 (Discrete Mathematics with Applications, Susanna S.Epp)
 pp.  642-653 (Discrete Mathematics with Applications, Susanna S.Epp)
+
+*** 
+# Dijkstra’s algorithm
+
+Edsgar Dijkstra, developed an algorithm to find the shortest path between a starting vertex and an ending vertex in a weighted graph in which all the weights are positive. It is somewhat similar to Prim’s algorithm in that it works outward from a starting vertex a, adding vertices and edges one by one to construct a tree T . However, it differs from Prim’s algorithm in the way it chooses the next vertex to add, ensuring that for each added vertex v, the length of the shortest path from a to v has been identified.
+
+At the start of execution of the algorithm, each vertex u of G is given a label L(u), which indicates the current best estimate of the length of the shortest path from a to u. L(a) is initially set equal to 0 because the shortest path from a to a has length zero, but, because there is no previous information about the lengths of the shortest paths from a to any other vertices of G, the label L(u) of each vertex u other than a is initially set equal to a number, denoted ∞, that is greater than the sum of the weights of all the edges of G. As execution of the algorithm progresses, the values of L(u) are changed, eventually becoming the actual lengths of the shortest paths from a to u in G.
+
+Because T is built up outward from a, at each stage of execution of the algorithm the only vertices that are candidates to join T are those that are adjacent to at least one vertex of T . Thus at each stage of Dijkstra’s algorithm, the graph G can be thought of as divided into three parts: the tree T that is being built up, the set of “fringe” vertices that are adjacent to at least one vertex of the tree, and the rest of the vertices of G. Each fringe vertex is a candidate to be the next vertex added to T . The one that is chosen is the one for which the length of the shortest path to it from a through T is a minimum among all the vertices in the fringe.
+
+An essential observation underlying Dijkstra’s algorithm is that after each addition of a vertex v to T , the only fringe vertices for which a shorter path from a might be found are those that are adjacent to v [because the length of the path from a to v was a minimum among all the paths from a to vertices in what was then the fringe]. So after each addition of a vertex v to T , each fringe vertex u adjacent to v is examined and two numbers are compared: the current value of L(u) and the value of L(v) + w(v, u), where L(v) is the length of the shortest path to v (in T ) and w(v, u) is the weight of the edge joining v and u. If L(v) + w(v, u) < L(u), then the value of L(u) is changed to L(v) + w(v, u).
+
+At the beginning of execution of the algorithm, the tree consists only of the vertex a, and L(a) = 0. When execution terminates, L(z) is the length of a shortest path from a to z.
+
+## Algorithm Body
+
+#### 1. Initialize T to be the graph with vertex a and no edges. Let V (T) be the set of
+vertices of T, and let E(T) be the set of edges of T.
+
+#### 2. Let L(a) = 0, and for all vertices in G except a, let L(u) = ∞.
+[The number L(x) is called the label of x.] 
+
+#### 3. Initialize v to equal a and F to be {a}.
+[The symbol v is used to denote the vertex most recently added to T.]
+
+#### 4. while (z ̸∈ V(T))
+
+- 4a. 
+
+F = (F − {v}) ∪ {vertices that are adjacent to v and are not in V(T)} 
+
+[The set F is called the fringe. Each time a vertex is added to T, it is removed from the fringe and the vertices adjacent to it are added to the fringe if they are not already in the fringe or the tree T.]
+
+- 4b. 
+
+For each vertex u that is adjacent to v and is not in V (T), if L(v) + w(v, u) < L(u) then
+
+L(u) = L(v) + w(v, u)
+D(u) = v
+
+[Note that adding v to T does not affect the labels of any vertices in the fringe F except those adjacent to v. Also, when L(u) is changed to a smaller value, the notation D(u) is introduced to keep track of which vertex in T gave rise to the smaller value.]
+
+- 4c. 
+
+Find a vertex x in F with the smallest label
+
+Add vertex x to V(T), and add edge {D(x),x} to E(T)
+v = x [This statement sets up the notation for the next iteration of the loop.]
+
+#### end while
+
+
+#### Output 
+L(z) [L(z), a nonnegative integer, is the length of the shortest path from a to z.]
+
+****
+

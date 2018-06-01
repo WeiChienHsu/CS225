@@ -90,3 +90,51 @@ Example 5.9.2, Example 5.9.4
 
 ## Unit 4: Basic Counting Rules and the Pigeonhole Principles 
 
+```
+Basic Counting Rules and the Pigeonhole Principles
+```
+#### Product Rule 
+The product rule (Textbook – Example 9.2.2, 9.2.3) applies when a
+procedure is made up of separate tasks
+
+### Addition Rulte
+The addition rule ( Textbook – Example 9.3.1, 9.3.2 ) applies If a procedure
+can be done either in one of n1 ways or in one of n2 ways, where none of the set of n1 ways is the same as any of
+the set of n2 ways, then there are n1 + n2 ways to do the task. 
+
+### Pigeonhoel Principles
+The Pigeonhole principles states (Textbook –
+Example 9.4.1-9.4.3), If k is a positive integer and k + 1 or more objects are placed into k boxes, then there is at
+least one box containing two or more of the objects.
+
+***
+
+## Unit 5: Permutations and Combinations 
+
+#### permutation 
+
+(Textbook – example – 9.2.8- 9.2.11) 
+
+#### combinations
+
+(Textbook - Example 9.5.4 - 9.5.7, 9.5.9-9.5.11) with and without repetitions.
+
+
+
+- Examples from Homework Assignment – Week 8
+- Demo and actual quiz over week 8 materials – all of them 
+
+***
+
+## Unit 6: Graph Theory
+
+#### graph definitions and properties, graph representations 
+
+( Textbook Example 10.1.4, 10.1.6,
+10.1.7)
+
+#### graph Degree ( Theorem 10.1.1, Proposition 10.1.3)
+
+simple path , graph connectivity and Euler circuits
+
+( Theorem 10.2.2-10.2.3, Example 10.2.5-10.2.6*, Theorem 10.2.4). Example 10.7.5.
