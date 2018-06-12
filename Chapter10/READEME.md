@@ -225,6 +225,24 @@ Definition: A Circuit is a "closed trail". That is, a circuit has no repeated ed
 
 Let G be a graph. An Euler Circuit for G is a circuit that contins every vertex and every edge of G. That is, an Euler circuit for G is a sequence of adjacent vertices and edfes in G that has at least one edge, starts and ends at the same vertex, "uses every vertex of G at least once, and uses every edge of G exactly once".
 
+### Proof
+
+```
+If a graph has an Euler circuit, then every vertex of the graph has positive even degree.
+```
+
+從其中一個終檢間點出發，走完一次圖，會發現每個點都經過一次，代表對每個點做進入與離開兩個動作，意味著有 2 indegree（兩個edges連接一個vertex)
+
+Suppose G is a graph that has an Euler circuit. [We must show that given any vertex v of G, the degree of v is even.] 
+
+Let v be any particular but arbitrarily chosen vertex of G. Since the Euler circuit contains every edge of G, it contains all edges incident on v. Now imagine taking a journey that begins in the middle of one of the edges adjacent to the start of the Euler circuit and continues around the Euler circuit to end in the middle of the starting edge. (See Figure 10.2.3. There is such a starting edge because the Euler circuit has at least one edge.) 
+
+Each time v is entered by traveling along one edge, it is immediately exited by traveling along another edge (since the journey ends in the middle of an edge).
+
+Because the Euler circuit uses every edge of G exactly once, every edge incident on v is traversed exactly once in this process. Hence the edges incident on v occur in entry/exit pairs, and consequently the degree of v must be a positive multiple of 2. But that means that v has positive even degree [as was to be shown].
+
+![example](./eulerCircuit.png)
+
 ***
 ## Required Reading
 pp.  625-638 (Discrete Mathematics with Applications, Susanna S.Epp)
